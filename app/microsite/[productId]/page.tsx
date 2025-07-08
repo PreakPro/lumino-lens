@@ -1,10 +1,12 @@
-type Props = {
-    params: { productId: string }
+interface PageProps {
+    params: {
+        productId: string;
+    };
 }
 
-export default function MicrositePage({ params }: Props) {
-    const id = params.productId
-    const pdfUrl = `/api/certificate/${id}`
+export default function MicrositePage({ params }: PageProps) {
+    const id = params.productId;
+    const pdfUrl = `/api/certificate/${id}`;
 
     return (
         <iframe
@@ -13,5 +15,5 @@ export default function MicrositePage({ params }: Props) {
             className="h-screen w-full"
             title={`Certificate for ${id}`}
         />
-    )
+    );
 }
