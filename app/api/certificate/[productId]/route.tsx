@@ -4,12 +4,13 @@ import { supabase } from "@/lib/initSupabase";
 import { NextRequest } from "next/server";
 
 export const runtime = "nodejs";
-export const dynamic = "force-dynamic"
+export const dynamic = "force-dynamic"; 
+export const dynamicParams = true;
 
 export async function GET(req: NextRequest) {
     const url = new URL(req.url);
     const pathParts = url.pathname.split("/");
-    const productId = pathParts[pathParts.length - 1]; 
+    const productId = pathParts[pathParts.length - 1];
 
     const { data, error } = await supabase
         .from("product_registrations")
