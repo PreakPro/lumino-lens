@@ -7,10 +7,18 @@ import { motion } from "framer-motion"
 export default function Microsite() {
     return (
         <main className="flex flex-col min-h-screen overflow-x-hidden justify-center items-center overflow-y-hidden relative text-black text-4xl">
+            <div>
+                <img src="/svgs/yellow_blob1.svg" className="absolute bottom-10 rotate-180 right-0 -z-1"/>
+                <img src="/svgs/red_part.svg" className="absolute rotate-180 left-0 -z-1"/>
+                <img src="/svgs/sketched_lines.svg" className="absolute rotate-90 bottom-30 right-40 -z-1"/>
+                <img src="/svgs/sketched_lines.svg" className="absolute top-30 left-10 -z-1"/>
+                <img src="/svgs/circle_lines.svg" className="absolute rotate-180 top-20 right-0 -z-1"/>
+            </div>
+
             <Header />
 
             <motion.div 
-                className="flex flex-col flex-grow gap-2 mt-50 text-center bg-[#dbffbf] max-w-5xl p-8 px-10 rounded-2xl shadow-black shadow-md border-1"
+                className="flex flex-col flex-grow gap-2 mt-40 text-center bg-[#dbffbf] max-w-5xl p-8 px-10 rounded-2xl shadow-black shadow-md border-1"
                 initial={{ y: -200, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeOut" }}

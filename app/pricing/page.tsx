@@ -7,6 +7,14 @@ import { motion } from "framer-motion";
 export default function Pricing() {
     return (
         <main className="flex flex-col min-h-screen overflow-x-hidden overflow-y-hidden relative text-black">
+            <div>
+                <img src="/svgs/red_part.svg" className="absolute rotate-270 rotate-x-180 left-1/9 -top-20 -z-1"/>
+                <img src="/svgs/circle_lines.svg" className="absolute rotate-45 left-0 -z-1"/>
+                <img src="/svgs/yellow_blob1.svg" className="absolute rotate-90 right-0 -z-1"/>
+                <img src="/svgs/sketched_lines.svg" className="absolute rotate-180 right-5 top-30 -z-1"/>
+                <img src="/svgs/yellow_blob2.svg" className="absolute -rotate-90 rotate-y-180 -bottom-7 -z-1"/>
+            </div>
+
             <Header />
 
             <div className="flex-grow">
