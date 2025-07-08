@@ -1,10 +1,8 @@
-interface PageProps {
-    params: {
-        productId: string;
-    };
-}
-
-export default function MicrositePage({ params }: PageProps) {
+export default function MicrositePage({
+    params,
+}: {
+    params: { productId: string };
+}) {
     const id = params.productId;
     const pdfUrl = `/api/certificate/${id}`;
 
