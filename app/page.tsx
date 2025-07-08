@@ -2,10 +2,12 @@ import Footer from "@/components/footer";
 import Header from "@/components/header";
 import { motion } from "framer-motion"
 import Card from "@/components/ui/card";
+import BackgroundDesign from "@/components/backgroundDesign";
 
 export default function Home() {
     return (
         <main className="flex flex-col min-h-screen overflow-x-hidden overflow-y-hidden relative text-black">
+            <BackgroundDesign />
             <Header />
 
             <section className="bg-[#FFDBA2] max-w-4xl w-full mx-auto mt-33 flex flex-wrap justify-center items-center border border-black rounded gap-4 px-4 text-center">
@@ -85,7 +87,7 @@ export default function Home() {
                 <img src="/svgs/leaf.svg" alt="" className="absolute top-1/4 mt-10 -left-8 scale-70 z-5"/>
             </motion.section>
 
-<section className="flex flex-wrap flex-grow justify-center mt-15 gap-8 max-w-4xl w-full mx-auto">
+            <section className="flex flex-wrap flex-grow justify-center mt-15 gap-8 max-w-4xl w-full mx-auto">
                 <Card 
                     svgPath="/svgs/tick_mark.svg" 
                     direction="left"
