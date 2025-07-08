@@ -116,6 +116,34 @@ export default function Home() {
                 </Card>
             </section>
 
+            <section className="flex-grow">
+                                <motion.div 
+                    className="text-3xl text-left ml-40"
+                    initial={{ x: -200, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    viewport={{ once: true, amount: 0.2 }}
+                >
+                    <h2 className="text-5xl mr-80 mt-20 mb-8">With each spectacle, get:</h2>
+                    <p className="ml-10">1. Eye exercises.</p>
+                    <p className="ml-10">2. Research.</p>
+                    <p className="ml-10 mb-60">3. Product reports.</p>
+                </motion.div>
+
+                <motion.div 
+                    className="text-3xl text-left justify-end flex flex-col absolute bottom-1/8 right-50"
+                    initial={{ x: 200, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                >
+                <h2 className="text-5xl">In the future:</h2>
+                <p className="z-10 ml-10">1. UV Protection.</p>
+                <p className="z-10 ml-10">2. School collaborations.</p>
+                <p className="z-10 ml-10">3. AR/VR Ready.</p>
+                </motion.div>
+            </section>
+
             <Footer />
         </main>
     )
