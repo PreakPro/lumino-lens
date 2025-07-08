@@ -8,10 +8,10 @@ export default function Pricing() {
     return (
         <main className="flex flex-col min-h-screen overflow-x-hidden overflow-y-hidden relative text-black">
             <div>
-                <img src="/svgs/red_part.svg" className="absolute rotate-270 rotate-x-180 left-1/9 -top-20 -z-1"/>
-                <img src="/svgs/circle_lines.svg" className="absolute rotate-45 left-0 -z-1"/>
+                <img src="/svgs/red_part.svg" className="md:absolute hidden rotate-270 rotate-x-180 left-1/9 md:-top-21 lg:-top-20 -z-1 md:scale-80 lg:scale-100"/>
+                <img src="/svgs/circle_lines.svg" className="md:absolute hidden rotate-45 left-0 -z-1"/>
                 <img src="/svgs/yellow_blob1.svg" className="absolute rotate-90 right-0 -z-1"/>
-                <img src="/svgs/sketched_lines.svg" className="absolute rotate-180 right-5 top-30 -z-1"/>
+                <img src="/svgs/sketched_lines.svg" className="absolute rotate-180 right-5 lg:top-30 -z-1"/>
                 <img src="/svgs/yellow_blob2.svg" className="absolute -rotate-90 rotate-y-180 -bottom-7 -z-1"/>
             </div>
 
@@ -20,7 +20,7 @@ export default function Pricing() {
             <div className="flex-grow">
                 <section className="grid md:grid-cols-3 gap-6 text-center max-w-5xl mx-auto mt-40">
                     <motion.div 
-                        className="border rounded-xl p-6 shadow-lg bg-[#F7FFE0]"
+                        className="border rounded-xl p-6 shadow-lg bg-[#F7FFE0] md:scale-100 scale-90"
                         initial={{ y: -100, opacity: 0}}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
@@ -35,7 +35,7 @@ export default function Pricing() {
                     </motion.div>
                     
                     <motion.div
-                        className="border rounded-xl p-6 shadow-lg bg-[#e0f1fa]"
+                        className="border rounded-xl p-6 shadow-lg bg-[#e0f1fa] md:scale-100 scale-90"
                         initial={{ y: -100, opacity: 0}}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
@@ -50,7 +50,7 @@ export default function Pricing() {
                     </motion.div>
                     
                     <motion.div 
-                        className="border rounded-xl p-6 shadow-lg bg-[#ccffd8]"
+                        className="border rounded-xl p-6 shadow-lg bg-[#ccffd8] md:scale-100 scale-90"
                         initial={{ y: -100, opacity: 0}}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}

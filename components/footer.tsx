@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <section className="w-full h-40 z-20 flex flex-row items-center bg-[#66635B] text-white text-xl mt-20">
+        <section className="w-full h-40 z-20 flex flex-row items-center bg-[#66635B] text-white md:text-xl text-md mt-20">
             <div className="flex flex-col justify-start ml-20">
                 <p>© 2025 LuminoLens</p>
                 <br/>
@@ -9,7 +9,7 @@ export default function Footer() {
 
             <div className="justify-end flex flex-1">
                 <a href="https://github.com/preakpro" target="_blank" rel="noopener noreferrer">
-                    <img src="/github_icon.svg" className="h-20 m-20 cursor-pointer" alt="GitHub" />
+                    <img src="/github_icon.svg" className="h-20 md:m-20 mr-30 ml-0 cursor-pointer" alt="GitHub" />
                 </a>
             </div>
         </section>
