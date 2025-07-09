@@ -28,7 +28,7 @@ export default function Microsite() {
                     href="/api/certificate/LUM-S-069"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-600 text-2xl hover:text-blue-700 transition-all hover:scale-105"
+                    className="text-blue-600 2xl:mt-15 text-2xl hover:text-blue-700 transition-all hover:scale-105"
                 >
                     ∘ LUM-S-069
                 </a>
